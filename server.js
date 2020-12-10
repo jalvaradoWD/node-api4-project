@@ -21,8 +21,8 @@ server.get("/", async (req, res) => {
 });
 
 server.get("/:id", async (req, res) => {
-  const { id } = req.params;
-  const { data: result } = await Axios.get(`${apiUrl}/coins/${id}`);
+  const { id: paramId } = req.params;
+  const { data: result } = await Axios.get(`${apiUrl}/coins/${paramId}`);
   const { id, name, tickers } = result;
   const { last: last_price } = tickers[0];
 
