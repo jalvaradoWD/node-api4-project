@@ -19,3 +19,11 @@ Pick any API, could be one of your past projects, and deploy it to `heroku`.
 
 This is the website that is deployed with heroku.
 [Website](https://cryptocurrency-api-jalvaradowd.herokuapp.com/)
+
+## API Routes
+
+"/"
+- Displays all of the marketable cryptocurrencies.
+  
+"/:id"
+- Display information about a specific cryptocurreny while using an id as the parameter.
